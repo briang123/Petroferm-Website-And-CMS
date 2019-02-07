@@ -1,0 +1,64 @@
+﻿
+
+CREATE  proc sp__DeleteUser
+	@UserId uniqueidentifier
+as
+begin
+	begin tran
+
+	declare @errorcode int,
+		@appUserId int
+
+	select @appUserId = AppUserId from tblAppUser where UserID = @UserId
+
+	delete from tblBusinessAppUser where AppUserID = @appUserId
+	select @errorcode = @@error
+
+	if (@errorcode = 0)
+	begin
+		delete from tblAppUser where AppUserID = @appUserId	
+		select @errorcode = @@error
+	end	
+
+	if (@errorcode = 0)
+	begin
+		DELETE FROM dbo.aspnet_Membership WHERE @UserId = UserId
+		select @errorcode = @@error
+	end
+
+	if (@errorcode = 0)
+	begin
+		DELETE FROM dbo.aspnet_UsersInRoles WHERE @UserId = UserId
+		select @errorcode = @@error
+	end
+
+	if (@errorcode = 0)
+	begin
+		DELETE FROM dbo.aspnet_Profile WHERE @UserId = UserId
+		select @errorcode = @@error
+	end
+
+	if (@errorcode = 0)
+	begin
+	        DELETE FROM dbo.aspnet_PersonalizationPerUser WHERE @UserId = UserId
+		select @errorcode = @@error
+	end
+
+	if (@errorcode = 0)
+	begin
+		DELETE FROM dbo.aspnet_Users WHERE @UserId = UserId
+		select @errorcode = @@error
+	end
+
+	if (@errorcode = 0)
+	begin
+		commit tran
+		return 1
+	end	
+	else
+	begin
+		rollback tran
+		return 0
+	end 	
+
+end

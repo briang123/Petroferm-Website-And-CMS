@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0">
+  <siteMapNode url="~/cms/" title="Home"  description="" roles="*">
+
+    <!-- ADMINISTRATION (just includes User Mgmt right now
+    <siteMapNode url="~/cms/UserList.aspx" title="Manage Users"  description="" roles="Administrator" /> -->
+
+    <!-- MANAGE DEPLOYMENT JOB -->
+    <siteMapNode url="~/cms/DeploymentJobList.aspx" title="Manage Deployment Jobs"  description=""  roles="Administrator,Author,Review,Approver,Deployer"/>
+
+    <!-- MANAGE BUSINESS UNITS -->
+    <siteMapNode url="~/cms/BusinessUnitList.aspx" title="Manage Business Units"  description="" roles="Administrator,Author,Review,Approver,Deployer,Reader"  />
+
+    <!-- MANAGE MARKETS -->
+    <siteMapNode url="~/cms/MarketList.aspx" title="Manage Markets"  description="" roles="Administrator,Author,Review,Approver,Deployer,Reader" />
+
+    <!-- MANAGE PRODUCT INFORMATION  -->
+    <siteMapNode url="" title="Manage Product Info"  description="" roles="Administrator,Author,Review,Approver,Deployer,Reader" >
+      <siteMapNode url="~/cms/ProductAttributeList.aspx" title="Product Attributes"  description="" roles="Administrator,Author,Review,Approver,Deployer,Reader" />
+      <siteMapNode url="~/cms/SearchAttributeList.aspx" title="Product Search Attributes"  description="" roles="Administrator,Author,Review,Approver,Deployer,Reader" />
+      <siteMapNode url="~/cms/ProductList.aspx" title="Products"  description="" roles="Administrator,Author,Review,Approver,Deployer,Reader" />
+    </siteMapNode>
+
+    <!-- MANAGE WEB CONTENT -->
+    <siteMapNode url="~/cms/PageList.aspx" title="Manage Pages"  description="" roles="Administrator,Author,Review,Approver,Deployer,Reader" />
+
+    <!-- MANAGE REGISTRANT INFORMATION  -->
+    <siteMapNode url="~/cms/RegList.aspx" title="Manage Registrants"  description="" roles="Administrator,Author,Review,Approver,Deployer,Reader" />
+
+    <!-- MANAGE USER INFORMATION  -->
+    <siteMapNode url="~/cms/UserList.aspx" title="Manage Users"  description="" roles="Administrator" />
+
+    <!-- MANAGE PASSWORD -->
+    <siteMapNode url="~/cms/ChangePassword.aspx" title="Change Password"  description="" roles="Administrator,Author,Review,Approver,Deployer,Reader"  />
+
+  </siteMapNode>
+  
+
+</siteMap>

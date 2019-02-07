@@ -1,0 +1,317 @@
+TD, P, BODY {
+	font : 11px Tahoma;
+	font-weight: normal;
+	text-decoration: none;
+	color: #000000;
+}
+
+.bodyBig {
+	font : 12px Tahoma;
+	font-weight: normal;
+	text-decoration: none;
+	color: #000000;
+}
+
+.bodySmall {
+    font: 10px Tahoma;
+    color: #000000;
+}
+
+.bodySmallCaps {
+    font: 10px Tahoma;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.bodyBlue {
+	font: 11px Tahoma;
+	color: #0097B4;
+}
+
+.smallBlue {
+	font: 10px Tahoma;
+	color: #0097B4;
+}
+
+.smallBlueCaps {
+	font: 10px Tahoma;
+	text-transform: uppercase;
+	color: #0097B4;
+}
+
+.marketTitle {
+	font: 23px Tahoma;
+	color: #74BBCE;
+	line-height: 25px;
+}
+
+.marketTitleBold {
+	font: 23px Tahoma;
+	font-weight: bold;
+	color: #74BBCE;
+	line-height: 25px;
+}
+
+.blueTitle {
+	font: 18px Tahoma;
+	color: #0097B4;
+	line-height: 24px;
+}
+
+.rtColTitle {
+	font: 11px Tahoma;
+	font-weight: bold;
+	color: #0097B4;
+	text-transform: uppercase;
+	line-height: 14px;
+}
+
+.navHeader {
+	font: 11px Tahoma;
+	font-weight: bold;
+	color: #C3C3B0;
+	text-transform: uppercase;
+}
+
+a {  
+	font: 11px Tahoma;
+	font-weight: normal;
+	text-decoration: none;
+	color: #0097B4;
+}
+
+a:hover {  
+	font: 11px Tahoma;
+	font-weight: normal;
+	text-decoration: underline;
+	color: #0097B4;
+}
+
+a:active {  
+	font: 11px Tahoma;
+	font-weight: normal;
+	text-decoration: underline;
+	color: #0097B4;
+}
+
+a:visited {  
+	font: 11px Tahoma;
+	font-weight: normal;
+	text-decoration: none;
+	color: #0097B4;
+}
+
+a.small {  
+	font: 10px Tahoma;
+	font-weight: normal;
+	text-decoration: underline;
+	color: #0097B4;
+}
+
+a.small:hover {  
+	font: 10px Tahoma;
+	font-weight: normal;
+	text-decoration: underline;
+	color: #0097B4;
+}
+
+a.small:active {  
+	font: 10px Tahoma;
+	font-weight: normal;
+	text-decoration: underline;
+	color: #0097B4;
+}
+
+a.small:visited {  
+	font: 10px Tahoma;
+	font-weight: normal;
+	text-decoration: underline;
+	color: #0097B4;
+}
+
+a.big {  
+	font: 12px Tahoma;
+	font-weight: normal;
+	text-decoration: none;
+	color: #0097B4;
+}
+
+a.big:hover {  
+	font: 12px Tahoma;
+	font-weight: normal;
+	text-decoration: underline;
+	color: #0097B4;
+}
+
+a.big:active {  
+	font: 12px Tahoma;
+	font-weight: normal;
+	text-decoration: underline;
+	color: #0097B4;
+}
+
+a.big:visited {  
+	font: 12px Tahoma;
+	font-weight: normal;
+	text-decoration: none;
+	color: #0097B4;
+}
+
+.rightNav {
+	font: 10px Tahoma;
+	font-weight: normal;
+	text-decoration: none;
+	color: #000000;
+}
+
+a.rightNav {  
+	font: 10px Tahoma;
+	font-weight: normal;
+	text-decoration: none;
+	color: #000000;
+}
+
+a.rightNav:hover {  
+	font: 10px Tahoma;
+	font-weight: normal;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+a.rightNav:active {  
+	font: 10px Tahoma;
+	font-weight: normal;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+a.rightNav:visited {  
+	font: 10px Tahoma;
+	font-weight: normal;
+	text-decoration: none;
+	color: #000000;
+}
+
+.rightNav2 {
+	font: 10px Tahoma;
+	font-weight: normal;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #000000;
+}
+
+a.rightNav2 {  
+	font: 10px Tahoma;
+	font-weight: normal;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #000000;
+}
+
+a.rightNav2:hover {  
+	font: 10px Tahoma;
+	font-weight: normal;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #0097B4;
+}
+
+a.rightNav2:active {  
+	font: 10px Tahoma;
+	font-weight: normal;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #0097B4;
+}
+
+a.rightNav2:visited {  
+	font: 10px Tahoma;
+	font-weight: normal;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #000000;
+}
+
+.rightNav2on {
+	font: 10px Tahoma;
+	font-weight: normal;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #0097B4;
+}
+
+.whiteBottomLine {
+	border-bottom: 1px solid #FFFFFF;
+}
+
+.whiteTopLine {
+	border-top: 1px solid #FFFFFF;
+	vertical-align:baseline;
+}
+
+.tblHdr {
+	font: 10px Tahoma;
+	font-weight: bold;
+	background-color: #E3E3D1;
+	color: #393934;
+	padding: 5px;
+}
+
+.tblHdrctr {
+	font: 10px Tahoma;
+	font-weight: bold;
+	background-color: #E3E3D1;
+	color: #393934;
+	padding: 5px;
+	text-align: center;
+}
+
+.tblRow1 {
+	font: 10px Tahoma;
+	font-weight: normal;
+	background-color: #C3C3B0;
+	color: #000000;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.tblRow1ctr {
+	font: 10px Tahoma;
+	font-weight: normal;
+	background-color: #C3C3B0;
+	color: #000000;
+	padding: 3px;
+	text-align: center;
+}
+
+.tblRow2 {
+	height: 1px;
+	background-color: #FFFFFF;
+}
+
+input.text {
+	font: 10px Tahoma;
+	color: #000000;
+}
+.text {
+	font: 10px Tahoma;
+	color: #000000;
+}
+HR {  
+	height: 1px solid;
+	font-weight: normal;
+	color: #0097B4;
+}
+
+/* Added by KV - 10/17/05 */
+.divisionTitleBold {
+	font: 11px Tahoma;
+	font-weight: bold;
+	color: #000000;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-left: 1px;
+	background-color: #C3C3B0;
+}

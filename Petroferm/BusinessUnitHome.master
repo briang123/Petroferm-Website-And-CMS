@@ -1,0 +1,212 @@
+<%@ Master Language="VB" CodeFile="BusinessUnitHome.master.vb" Inherits="BusinessUnitHome" %>
+<%@ Register Src="controls/AdobeLink.ascx" TagName="AdobeLink" TagPrefix="uc2" %>
+<%@ Register Src="controls/Login.ascx" TagName="Login" TagPrefix="uc1" %>
+<html>
+<head id="Head1" runat="server">
+    <title>Welcome to Petroferm Inc.</title>
+    <LINK href="web/files/scripts/style.css" type="text/css" rel="stylesheet">
+    <LINK href="web/files/scripts/homelayers.css" type="text/css" rel="stylesheet">
+    <LINK href="web/files/scripts/nav.css" type="text/css" rel="stylesheet">
+</head>
+<script type="text/javascript">
+var welcomeSections = new Array(<%=JavaScriptWelcomeArrayList%>);
+<!-- #include virtual="web/files/scripts/findDom.js" -->
+<!-- #include virtual="web/files/scripts/effects.js" -->
+</script>
+<script type="text/javascript">
+if (isLayers) {
+    origWidth = innerWidth;
+    origHeight = innerHeight;						
+    onresize = reDo;
+}
+//CSS window resize fix for NS 4.x
+function reDo() {
+    if (innerWidth != origWidth || innerHeight != origHeight) location.reload();
+}
+</script>
+<body id="MasterBody" runat="server" bgcolor="#0097B4" leftmargin="0" topmargin="10" marginwidth="0" marginheight="10">
+<form id="form1" runat="server">
+    <table border="0" width="797" cellspacing="0" cellpadding="1" align="center" bgcolor="#FFFFFF">
+	    <tr>
+		    <td>
+                <a name="TOP"></a>
+                <!-- Begin Logo/Nav Table -->
+                <table border="0" width="797" cellspacing="0" cellpadding="0" align="center" bgcolor="#FFFFFF" ID="Table1">
+	                <tr bgcolor="#E3E3D1">
+		                <td width="625" height="75">
+                            &nbsp;<a id="MasterLogoHref" runat="server" href="Petroferm.aspx"></a>
+		                </td>
+		                <td width="172" valign="bottom">
+                            <table border="0" width="155" cellspacing="0" cellpadding="0" align="left" ID="Table2">
+                                <tr>
+                                    <td style="padding:0 0 3 0;">
+                                        <asp:TextBox ID="txtsearch" runat="server" style="width:80px;border-style:solid;border-width:1;border-color:#666;font-family:tahoma;font-size:11px;" />
+                                        <asp:Button ID="btnSimpleSearch" runat="server" Text="Search" CssClass="smallBlueCaps" style="border-style:solid;border-width:1px;border-color:black;" />
+                                        <br /><a id="MasterAdvancedSearch" runat="server">Advanced Search</a>
+                                    </td>	                            
+                                </tr> 	            
+                            </table>
+                        </td>
+                    </tr>
+	                <tr>
+		                <td colspan="2" height="1" bgcolor="#FFFFFF"></td>
+	                </tr>
+	                <tr>
+		                <!-- Top Navigation -->
+		                <td colspan="2" height="44" bgcolor="#74BBCE" width="797" id="MasterTopMenu" runat="server"></td>
+		                <!-- End Logo/Nav Table -->
+	                </tr>
+                </table>
+                <!-- Begin Image/Welcome Table -->
+                <table border="0" width="797" cellspacing="0" cellpadding="0" align="center" bgcolor="#FFFFFF">
+	                <tr>
+		                <td colspan="3" height="1" bgcolor="#FFFFFF"></td>
+	                </tr>
+	                <tr>
+		                <td colspan="3"><!-- Begin Dynamic Market Welcome Section -->
+		                    <table width="797" border="0" cellpadding="0" cellspacing="0">
+		                        <tr valign="top">
+		                            <td width="797">
+										<!-- ****************** Welcome Container ************************** -->
+										<div id="welcomeContainer">
+										
+                                            <asp:ContentPlaceHolder ID="MasterHeaderImage" runat="server">
+                                                                                        
+		                                        <div id="homepageDefaultWelcome">
+			                                        <table width="797" border="0" cellspacing="0" cellpadding="0">
+				                                        <tr> 
+					                                        <td><img src="web/files/images/header/petroferm_home_menu2.jpg" width="443" height="110" border="0" alt="Petroferm Inc."></td>
+					                                        <td width="1" height="110"><img src="web/files/images/misc/spacer.gif" width="1" height="110" border="0"></td>
+					                                        <td bgcolor="#BAE0EA" width="352" valign="top" style="padding-top: 10px;">
+						                                        <br>
+						                                        <div class="marketTitleBold" style="padding-left: 18px;">Welcome to</div>
+						                                        <div class="marketTitle" style="padding-left: 45px;">Petroferm Inc.</div>						
+
+					                                        </td>        
+				                                        </tr>
+			                                        </table>    
+		                                        </div>		    		
+
+                                        		
+		                                        <div id="homepagePetrofermCleaningWelcome"> 
+		                                          <table width="796" border="0" cellspacing="0" cellpadding="0">
+			                                        <tr> 
+			                                          <td><img src="web/files/images/header/cleaning_home_menu1.jpg" width="443" height="110" border="0" alt="Petroferm Cleaning Products Division"></td>
+			                                          <td width="1" height="110"><img src="web/files/images/misc/spacer.gif" width="1" height="110" border="0"></td>
+			                                          <td bgcolor="#BAE0EA" width="352" valign="top" style="padding-top: 10px;" onMouseOver="window.clearTimeout(timeOut);" onMouseOut="welcomeSectionMouseOut();"> 
+				                                        <div class="marketTitleBold" style="padding-left: 18px;" >Welcome 
+				                                          to </div>
+				                                        <div class="marketTitle" style="padding-left: 45px;" >Petroferm Cleaning
+				                                          Products Division</div>
+			                                          </td>
+			                                        </tr>
+		                                          </table>
+		                                        </div>
+                                        								
+		                                        <div id="homepagePetrofermFuelWelcome"> 
+		                                          <table width="796" border="0" cellspacing="0" cellpadding="0">
+			                                        <tr> 
+			                                          <td><img src="web/files/images/header/fueloil_home_menu1.jpg" width="443" height="110" border="0" alt="Petroferm Fuels Division"></td>
+			                                          <td width="1" height="110"><img src="web/files/images/misc/spacer.gif" width="1" height="110" border="0"></td>
+			                                          <td bgcolor="#BAE0EA" width="352" valign="top" style="padding-top: 10px;" onMouseOver="window.clearTimeout(timeOut);" onMouseOut="welcomeSectionMouseOut();"> 
+				                                        <div class="marketTitleBold" style="padding-left: 18px;" >Welcome 
+				                                          to </div>
+				                                        <div class="marketTitle" style="padding-left: 45px;" >Petroferm Fuels 
+				                                          Division</div>
+			                                          </td>
+			                                        </tr>
+		                                          </table>
+		                                        </div>											
+
+		                                        <div id="homepageConsumerWelcome" > 
+			                                        <table width="796" border="0" cellspacing="0" cellpadding="0">
+				                                        <tr> 
+			                                                <td><img src="web/files/images/header/consumer_home_menu2.jpg" width="443" height="110" border="0" alt="Consumer Products Division"></td>
+					                                        <td width="1" height="110"><img src="web/files/images/misc/spacer.gif" width="1" height="110" border="0"></td>
+					                                        <td bgcolor="#BAE0EA" width="352" valign="top" style="padding-top: 10px;"  onMouseOver="window.clearTimeout(timeOut);" onMouseOut="welcomeSectionMouseOut();"> 
+						                                        <div class="marketTitleBold" style="padding-left: 18px;" >Welcome to</div>
+						                                        <div class="marketTitle" style="padding-left: 45px;" >Consumer Products Division</div>
+						                                        <div style="padding-left: 65px;font-weight:bold;color: #74BBCE;" >
+							                                        <a href="http://www.pylonhq.com/michelin" class="marketTitleLink" >Michelin Auto Appearance Products</a> &rarr;<br>
+							                                        <a href="http://www.privatelabelcleaners.com/" class="marketTitleLink" >Private Label</a> &rarr;<br>
+							                                        <a href="/cabanaclean/" class="marketTitleLink" >CABANA Cleaning Product</a> &rarr;
+						                                        </div>
+					                                        </td>
+				                                        </tr>
+			                                        </table>
+		                                        </div>		    
+
+		                                        <div id="homepageIndustrialWelcome" > 
+			                                        <table width="796" border="0" cellspacing="0" cellpadding="0">
+				                                        <tr> 
+			 	                                            <td><img src="web/files/images/header/industrial_home_menu2.jpg" width="443" height="110" border="0" alt="Industrial Products Division"></td>
+					                                        <td width="1" height="110"><img src="web/files/images/misc/spacer.gif" width="1" height="110" border="0"></td>
+					                                        <td bgcolor="#BAE0EA" width="352" valign="top" style="padding-top: 10px;" onMouseOver="window.clearTimeout(timeOut);" onMouseOut="welcomeSectionMouseOut();"> 
+						                                        <div class="marketTitleBold" style="padding-left: 18px;" >Welcome to</div>
+						                                        <div class="marketTitle" style="padding-left: 45px;" >Industrial Products Division</div>
+						                                        <div style="padding-left: 50px;font-weight:bold;color: #74BBCE;" >
+							                                        <table border="0" cellpadding="2" cellspacing="0">
+								                                        <tr>
+									                                        <td style="font-weight:bold;color: #74BBCE;">
+										                                        <a href="/?bus=2" class="marketTitleLink" >Lambent Technologies</a> &rarr;<br>
+										                                        <a href="/ssd.asp" class="marketTitleLink" >Lambent Technologies SSD</a> &rarr;<br>
+									                                        </td>
+									                                        <td><img src="web/files/images/misc/spacer.gif" width="10" height="1" border="0"></td>
+									                                        <td style="font-weight:bold;color: #74BBCE;">
+										                                        <a href="/wax.asp" class="marketTitleLink" >Hansotech Inc.</a> &rarr;<br>
+										                                        <a href="/?bus=5" class="marketTitleLink" >Joseph Storey</a> &rarr;
+									                                        </td>
+								                                        </tr>
+							                                        </table>
+						                                        </div>  
+					                                        </td>
+				                                        </tr>
+			                                        </table>
+		                                        </div>	
+
+
+
+                                            </asp:ContentPlaceHolder>
+
+                                        </div>
+		                            </td>
+                                    <td width="1" bgcolor="#BAE0EA"><img src="web/files/images/misc/spacer.gif" alt="Petroferm Inc." width="1" height="110" border="0"></td>
+		                        </tr>
+		                    </table><!-- End Dynamic Market Welcome Section -->
+                        </td>
+	                </tr>
+	                <tr>
+		                <td colspan="3" height="1" bgcolor="#FFFFFF"></td>
+	                </tr>
+	                <tr>
+		                <td colspan="3" height="9" bgcolor="#74BBCE">&nbsp;</td>
+	                </tr>
+	                <tr>
+		                <td colspan="3" height="1" bgcolor="#FFFFFF"></td>
+	                </tr>
+                </table>
+                <!-- End Image/Welcome Table -->
+                <!-- Begin Side Nav/Content Table -->
+                <table border="0" width="797" height="100%" cellspacing="0" cellpadding="0" align="center" bgcolor="#FFFFFF">
+                    <tr valign="top" bgcolor="#E3E3D1">
+                        <td width="164" height="21"><img src="web/files/images/misc/spacer.gif" width="1" height="21" alt="Petroferm Inc." border="0"></td>
+                        <td width="1"><img src="web/files/images/misc/spacer.gif" width="1" alt="Petroferm Inc." border="0"></td>
+                        <td width="30" rowspan="2"><img src="web/files/images/misc/spacer.gif" alt="Petroferm Inc." width="30" height="1" border="0"></td>
+                        <asp:ContentPlaceHolder ID="MasterBodyContent" runat="server"></asp:ContentPlaceHolder>		                
+                    </tr>
+                    <tr valign="top" bgcolor="#C3C3B0">
+                        <td>
+                            <asp:PlaceHolder ID="SideNavigation" runat="server" /> 
+                            <uc1:Login ID="Login1" runat="server" />                            
+                            <uc2:AdobeLink ID="AdobeLink1" runat="server" />                            
+                        </td>
+                    </tr>
+                </table>
+                <!-- End Side Nav/Content Table -->		
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
+

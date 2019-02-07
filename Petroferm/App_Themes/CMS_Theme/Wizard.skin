@@ -1,0 +1,31 @@
+<%--
+Default skin template. The following skins are provided as examples only.
+
+1. Named control skin. The SkinId should be uniquely defined because
+   duplicate SkinId's per control type are not allowed in the same theme.
+
+<asp:GridView runat="server" SkinId="gridviewSkin" BackColor="White" >
+   <AlternatingRowStyle BackColor="Blue" />
+</asp:GridView>
+
+2. Default skin. The SkinId is not defined. Only one default 
+   control skin per control type is allowed in the same theme.
+
+<asp:Image runat="server" ImageUrl="~/images/image1.jpg" />
+
+
+       <!-- <SideBarStyle VerticalAlign="Top" BackColor="#74BBCE" Font-Size="0.9em" Width="150px" />-->
+       
+--%>
+
+    <asp:Wizard runat="server" BackColor="#E6E2D8" BorderColor="#999999" BorderStyle="Solid" BorderWidth="1px" Font-Names="Tahoma" Font-Size="12px">
+
+        <SideBarStyle VerticalAlign="Top" BackColor="#74BBCE" Font-Size="11px" ForeColor="White" />
+        <StepStyle BackColor="#F7F6F3" BorderColor="#E6E2D8" BorderStyle="Solid" BorderWidth="2px" />
+        <NavigationButtonStyle BackColor="White" BorderColor="#C5BBAF" BorderStyle="Solid"
+            BorderWidth="1px" Font-Names="Verdana" Font-Size="12px" ForeColor="#1C5E55" />
+        <SideBarButtonStyle ForeColor="White" />
+        <HeaderStyle BackColor="#666666" BorderColor="#E6E2D8" BorderStyle="Solid" BorderWidth="2px"
+            Font-Bold="True" Font-Size="10px" ForeColor="White" HorizontalAlign="Center" />
+            
+    </asp:Wizard>

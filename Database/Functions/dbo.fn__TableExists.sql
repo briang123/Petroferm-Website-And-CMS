@@ -1,0 +1,19 @@
+﻿
+
+CREATE FUNCTION fn__TableExists(
+	@tbl varchar(100)
+)
+RETURNS bit
+AS
+BEGIN
+	DECLARE @Exists bit
+	IF EXISTS (SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = @tbl)
+	BEGIN
+		SELECT @Exists = 1
+	END
+	ELSE
+	BEGIN
+		SELECT @Exists = 0
+	END
+RETURN @Exists
+END

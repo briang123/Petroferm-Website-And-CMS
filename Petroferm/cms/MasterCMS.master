@@ -1,0 +1,89 @@
+<%@ Master Language="VB" CodeFile="MasterCMS.master.vb" Inherits="MasterCMS" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title runat="server" id="HeadTitle">MasterPages Demo</title>
+    <link href="../App_Themes/CMS_Theme/StyleSheet.css" rel="stylesheet" type="text/css" />
+</head>
+<body style="margin:0 0 0 0;">
+    <form id="form1" runat="server">
+    <div><table border="0" cellpadding="0" cellspacing="0">
+            <tr>
+                <td colspan="1" style="border-bottom: #74bbce thick solid; height: 46px; background-color: #e3e3d1">
+                    &nbsp;&nbsp;
+                    <asp:Image ID="imgLogo" runat="server" ImageUrl="" />
+                    </td>
+                 <td style="border-bottom: #74bbce thick solid; height: 46px; background-color: #e3e3d1; text-align: left; text-indent: 5px;">
+                 <asp:Label ID="lblBusUnit" runat="server" CssClass="formFieldLabel" Text="Business Unit"></asp:Label>&nbsp;<asp:DropDownList
+                        ID="ddlBusinessUnit" runat="server" AutoPostBack="True">
+                    </asp:DropDownList>&nbsp; &nbsp; &nbsp;<asp:Label ID="lblJob" runat="server" CssClass="formFieldLabel" Text="Deployment Job" Width="108px"></asp:Label>
+                    <nobr><asp:DropDownList ID="ddlJob" runat="server" DataSourceID="DeploymentJobsNotLiveDS" DataTextField="JobName" DataValueField="DeploymentJobID">
+                    </asp:DropDownList>
+                     <asp:Button ID="btnSetActiveJob" runat="server" Text="Set Active Job" Width="109px" /></nobr>
+                     <asp:LinkButton ID="lbtnViewJobDetails" runat="server" Visible="False"><img alt="View Job Details" src= "../App_Themes/CMS_Theme/images/detail.gif" style="padding-left:5px;padding-right:5px;padding-bottom:5px;border:none;vertical-align:middle;"  />View Job Details</asp:LinkButton>
+                 </td>
+                 
+                <td colspan="1" style="border-bottom: #74bbce thick solid; height: 46px; background-color: #e3e3d1">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="1" style="width: 169px; height: 54px; border-bottom: silver thin solid; text-align: center;">
+                    <asp:Image ID="imgPageIcon" runat="server" ImageUrl="~/App_Themes/CMS_Theme/images/home.gif" />
+                    </td>
+                <td colspan="1" style="height: 54px; width: 100%; border-bottom: silver thin solid;">
+                    
+                    <span style="font-size:14pt;text-align: left;font-weight:bold;">    <asp:Label ID="lblPageTitle" runat="server" Text="Page Title Here"></asp:Label>&nbsp;</span>
+                    <br /><strong>Content Management System</strong>
+                </td>
+            </tr>
+            <tr>
+                <td style="vertical-align: top; width: 169px; height: 300px; background-color: lightgrey">
+                    &nbsp;<asp:LoginStatus ID="LoginStatus1"
+                        runat="server" />
+                    |
+                    <asp:LoginName ID="LoginName1" runat="server" />
+                    <asp:TreeView ID="SideNavTree" runat="server" DataSourceID="SiteMapDataSourceCMS" ExpandDepth="2"
+                        ImageSet="Arrows">
+                        <ParentNodeStyle Font-Bold="False" />
+                        <HoverNodeStyle Font-Underline="True" ForeColor="#5555DD" />
+                        <SelectedNodeStyle Font-Underline="True" ForeColor="#5555DD" HorizontalPadding="0px"
+                            VerticalPadding="0px" />
+                        <NodeStyle Font-Names="Tahoma" Font-Size="10pt" ForeColor="Black" HorizontalPadding="5px"
+                            NodeSpacing="0px" VerticalPadding="0px" />
+                    </asp:TreeView>
+                    <asp:SiteMapDataSource ID="SiteMapDataSourceCMS" runat="server" />
+                </td>
+                <td style="vertical-align: top">
+                    <table border="0" cellpadding="3" cellspacing="0" width="100%">
+                        <tr><td style="height:10px"></td></tr>
+                        <tr>
+                            <td style="width:15px">&nbsp;</td>
+                            <td width="800">
+
+                    <asp:ContentPlaceHolder ID="phMain" runat="server">
+                    </asp:ContentPlaceHolder>                            
+                            </td>
+                        </tr>
+                    
+                    </table>
+                   
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="height: 40px" class="footer">
+                    Copyright © 2006 Petroferm, Inc.</td>
+            </tr>
+        </table>
+    </div>
+        <asp:ObjectDataSource ID="BusinessUnitDS" runat="server" SelectMethod="GetList" TypeName="BusinessUnit" OldValuesParameterFormatString="original_{0}">
+            <SelectParameters>
+                <asp:Parameter DefaultValue="0" Name="mode" Type="Object" />
+            </SelectParameters>
+        </asp:ObjectDataSource>
+    <asp:ObjectDataSource ID="DeploymentJobsNotLiveDS" runat="server"
+                        SelectMethod="GetActiveList" TypeName="DeploymentJob"></asp:ObjectDataSource>
+    </form>
+</body>
+</html>

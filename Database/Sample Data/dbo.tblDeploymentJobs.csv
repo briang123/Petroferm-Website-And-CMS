@@ -1,0 +1,2 @@
+"DeploymentJobID","JobName","JobDescription","ReviewBy","ApprovedBy","DeploymentDate","DeployedBy","WorkflowStatus","LastModifiedDate","LastModifiedBy","ActiveFlag"
+"1","REBUILD PETROFERM FROM SCRATCH","Drop live tables, truncate all staging data (from non-lookup tables), and reload all the default Petroferm content so that business units can be added.","0","0","2007-03-18 21:51:30","0","LIVE","2007-03-18 21:51:27","1","1"

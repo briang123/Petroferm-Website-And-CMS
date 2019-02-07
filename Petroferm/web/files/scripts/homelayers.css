@@ -1,0 +1,170 @@
+/* Styles used for the dynamic Market welcome section on the homepage. */
+#welcomeContainer {
+    position: absolute;
+    height: 110px;
+    width: 796px;
+}
+#homepageDefaultWelcome {
+    position: absolute;
+    z-index: 100; 
+    visibility: visible;
+    top: 0px;
+    left: 0px;
+}
+#homepageFoodWelcome {
+    position: absolute;
+    visibility: hidden; 
+    z-index: 100; 
+    top: 0px;
+    left: 0px;
+}
+#homepageCoatingsWelcome {
+    position: absolute;
+    visibility: hidden; 
+    z-index: 100; 
+    top: 0px;
+    left: 0px;
+}
+#homepageLubesWelcome {
+    position: absolute;
+    visibility: hidden; 
+    z-index: 100; 
+    top: 0px;
+    left: 0px;
+}
+#homepagePharmWelcome {
+    position: absolute;
+    visibility: hidden; 
+    z-index: 100; 
+    top: 0px;
+    left: 0px;
+}
+/* Cleaning Division Layers */
+#homepageElectronicsWelcome {
+    position: absolute;
+    visibility: hidden; 
+    z-index: 100; 
+    top: 0px;
+    left: 0px;
+}
+#homepagePrecisionWelcome {
+    position: absolute;
+    visibility: hidden; 
+    z-index: 100; 
+    top: 0px;
+    left: 0px;
+}
+#homepageAsphaltWelcome {
+    position: absolute;
+    visibility: hidden; 
+    z-index: 100; 
+    top: 0px;
+    left: 0px;
+}
+#homepageMedicalWelcome {
+    position: absolute;
+    visibility: hidden; 
+    z-index: 100; 
+    top: 0px;
+    left: 0px;
+}
+#homepageAerospaceWelcome {
+    position: absolute;
+    visibility: hidden; 
+    z-index: 100; 
+    top: 0px;
+    left: 0px;
+}
+
+/* Fuel & Oilfield Division Layers */
+#homepageFuelWelcome {
+    position: absolute;
+    visibility: hidden; 
+    z-index: 100; 
+    top: 0px;
+    left: 0px;
+}
+#homepageOilfieldWelcome {
+    position: absolute;
+    visibility: hidden; 
+    z-index: 100; 
+    top: 0px;
+    left: 0px;
+}
+
+/* Joseph Storey Layers */
+#homepageFlameWelcome {
+    position: absolute;
+    visibility: hidden; 
+    z-index: 100; 
+    top: 0px;
+    left: 0px;
+}
+#homepageWoodWelcome {
+    position: absolute;
+    visibility: hidden; 
+    z-index: 100; 
+    top: 0px;
+    left: 0px;
+}
+
+/* Consumer Layers */
+#homepageCabanaWelcome {
+    position: absolute;
+    visibility: hidden; 
+    z-index: 100; 
+    top: 0px;
+    left: 0px;
+}
+#homepageMichelinWelcome {
+    position: absolute;
+    visibility: hidden; 
+    z-index: 100; 
+    top: 0px;
+    left: 0px;
+}
+#homepageActibrandsWelcome {
+    position: absolute;
+    visibility: hidden; 
+    z-index: 100; 
+    top: 0px;
+    left: 0px;
+}
+#homepagePrivateWelcome {
+    position: absolute;
+    visibility: hidden; 
+    z-index: 100; 
+    top: 0px;
+    left: 0px;
+}
+
+/* Petroferm Corporate Layers */
+#homepagePetrofermCleaningWelcome {
+    position: absolute;
+    visibility: hidden; 
+    z-index: 100; 
+    top: 0px;
+    left: 0px;
+}
+#homepagePetrofermFuelWelcome {
+    position: absolute;
+    visibility: hidden; 
+    z-index: 100; 
+    top: 0px;
+    left: 0px;
+}
+#homepageConsumerWelcome {
+    position: absolute;
+    visibility: hidden; 
+    z-index: 100; 
+    top: 0px;
+    left: 0px;
+}
+#homepageIndustrialWelcome {
+    position: absolute;
+    visibility: hidden; 
+    z-index: 100; 
+    top: 0px;
+    left: 0px;
+}
+

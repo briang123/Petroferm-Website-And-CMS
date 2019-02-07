@@ -1,0 +1,113 @@
+.navheader-active
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 9pt;
+    COLOR: #000000;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    TEXT-DECORATION: none;
+}
+.navheader-activeback
+{
+    BACKGROUND-COLOR: #4d8549;
+}
+.navheader-inactive
+{   /* Nav top-header hrefs */
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 9pt;
+    COLOR: #000000;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    TEXT-DECORATION: none;
+}
+.navheader-expand
+{   /* Collapse/Expand all hrefs */
+    FONT-SIZE: 8pt;
+    COLOR: #000000;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    TEXT-DECORATION: none;
+}
+.navback-main
+{
+   /*BACKGROUND-COLOR: #d5d5bc*/
+    background-color: "#C3C3B0";
+}
+.navback-opendrop
+{
+    /*BACKGROUND-COLOR: #d5d5bc*/
+    /*background-color: #A8E0E9;*/
+    background-color: "#C3C3B0";
+}
+.navback-activedrop
+{   /* Selected navigation section */
+    BACKGROUND-COLOR: "#C3C3B0";
+}
+.navsub-inact
+{   /* All submenu items */
+	font: 10px Tahoma;
+	font-weight: normal;
+	text-decoration: none;
+	color: #0097B4;    
+	text-transform: capitalize;	
+}
+a.navsub-inact
+{   /* All submenu items */
+	font: 10px Tahoma;
+	font-weight: normal;
+	text-decoration: none;
+	color: #000000;    
+	text-transform:capitalize;
+}
+a.navsub-inact:visited 
+{   /* All submenu items */
+	font: 10px Tahoma;
+	font-weight: normal;
+	text-decoration: none;
+	color: #000000;    
+	text-transform:capitalize;	
+}
+a.navsub-inact:hover 
+{   /* All submenu items */
+	font: 10px Tahoma;
+	font-weight: normal;
+	text-decoration:underline;
+	color: #0097B4;    
+	text-transform:capitalize;	
+}   
+
+a.navsub-inact:active
+{   /* All submenu items */
+	font: 10px Tahoma;
+	font-weight: normal;
+	text-decoration:underline;
+	color: #0097B4;    
+	text-transform:capitalize;	
+}
+.navsub-act
+{   /* Selected navigation element */
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 8pt;
+    COLOR: red;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    TEXT-DECORATION: none;
+}
+A.navheader-active:hover
+{
+    COLOR: #0093B7;
+    TEXT-DECORATION: none;
+}
+.menuchild 
+{
+    display:none;
+}
+.menuopen
+{
+    display:block;
+    visibility:visible;
+}
+.navsub-selected
+{   /* All submenu items */
+	font: 10px Tahoma;
+	font-weight: normal;
+	text-decoration: none;
+	color: #0097B4;    
+	text-transform: capitalize;	
+}
