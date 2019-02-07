@@ -6,7 +6,3 @@ This project was developed in 2006 using a Web Forms ASP.NET 2.0 (VB.NET) applic
 ### About
 The Petroferm website was developed to allow for the dynamic creation of business units, markets, and web pages. For this reason, I utilized common web page templates that supported multiple page types. With the use of url rewrite and domain mapping, I enabled for domain names to be mapped to a "url friendly" name that represented a dynamic web page. 
 
-
-### Content Management System
-
-[Here are some screens of the CMS](https://github.com/briang123/Petroferm-Website-And-CMS/blob/master/Petroferm-CMS-TestingProcedures.pdf)
