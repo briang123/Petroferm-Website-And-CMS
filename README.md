@@ -9,7 +9,7 @@ The Petroferm website was developed to allow for the dynamic creation of busines
 
 ### Content Management System
 
-[Here are some screens of the CMS](./Petroferm-CMS-TestProcedures)
+[Here are some screens of the CMS](Petroferm-CMS-TestProcedures.pdf)
 
 
 
